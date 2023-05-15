@@ -7,13 +7,5 @@ Description: The Geocoding package provides functions for geocoding Chinese addr
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Imports:
-    httr2,
-    jsonlite,
-    stringr,
-    dplyr，
-    furrr,
-    purrr,
-    dplyr
 RoxygenNote: 7.1.1
 URL: https://xinzhuo.work/project/
