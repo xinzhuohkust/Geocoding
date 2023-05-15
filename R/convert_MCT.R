@@ -48,7 +48,13 @@ convert_MCT <- function(lon, lat) {
   if (lat < 0) {
     aw <- aw * -1
   }
-  return(c(e, aw))
+  
+  return(
+    list(
+    "longitude" = e,
+    "latitude" = aw
+    )
+   )
 }
 
 
