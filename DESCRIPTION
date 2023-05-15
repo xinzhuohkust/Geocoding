@@ -3,7 +3,9 @@ Title: Geocode Chinese addresses and return administrative information and other
 Version: 0.1.0
 Authors@R: 
     person("Xinzhuo", "Huang", email = "xhuangcb@connect.ust.hk", role = c("aut", "cre"))
-Description: The Geocoding package provides functions for geocoding Chinese addresses and returning administrative information and other socio-economic information. The package uses data from various sources, including the Baidu Maps API and the China National Bureau of Statistics, to provide accurate and up-to-date information. The package is designed for researchers, analysts, and other users who need to work with Chinese address data.
+Description: The package uses data from various sources, including the Baidu Maps API and the 
+    China National Bureau of Statistics, to provide accurate and up-to-date information. 
+    The package is designed for social scientists who need to work with Chinese address data. 
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
