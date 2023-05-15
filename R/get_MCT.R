@@ -18,7 +18,7 @@ get_MCT <- function(address, sleep = 0) {
 
   Sys.sleep(sleep)
   
-  names(mct) <- c("longitude", "latitude")
+  names(Mct) <- c("longitude", "latitude")
 
   return(MCT)
 }
