@@ -1,13 +1,19 @@
 Package: Geocoding
-Type: Package
-Title: What the Package Does (Title Case)
+Title: Geocode Chinese addresses and return administrative information and other socio-economic information
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Authors@R: 
+    person("Xinzhuo", "Huang", email = "xhuangcb@connect.ust.hk", role = c("aut", "cre"))
+Description: The Geocoding package provides functions for geocoding Chinese addresses and returning administrative information and other socio-economic information. The package uses data from various sources, including the Baidu Maps API and the China National Bureau of Statistics, to provide accurate and up-to-date information. The package is designed for researchers, analysts, and other users who need to work with Chinese address data.
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.2.3
-
+Imports:
+    httr2,
+    jsonlite,
+    stringr,
+    dplyr，
+    furrr,
+    purrr,
+    dplyr
+RoxygenNote: 7.1.1
+URL: https://xinzhuo.work/project/
