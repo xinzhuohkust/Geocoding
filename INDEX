@@ -1,0 +1,7 @@
+convert_MCT             Convert Baidu Maps Mercator coordinates to
+                        WGS84 coordinates.
+get_MCT                 Get the Mercator coordinates of a location
+                        using Baidu Maps API
+get_admin_info          Get administrative information by coordinates.
+haversine_distance      Calculate the Haversine distance between two
+                        points.
