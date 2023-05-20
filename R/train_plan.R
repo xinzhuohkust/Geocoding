@@ -1,5 +1,5 @@
 train_plan <- function(origin, destination, sleep = 0, ak) {
-  query <- stringr::str_c("https://api.map.baidu.com/direction/v2/transit?origin=", origin[[2]], ",", origin[[1]], "&destination=", destination[[2]], ",", destination[[1]], "&trans_type_intercity=0&ak=", ak)
+  query <- stringr::str_c("https://api.map.baidu.com/direction/v2/transit?origin=", origin[2], ",", origin[1], "&destination=", destination[[2]], ",", destination[[1]], "&trans_type_intercity=0&ak=", ak)
   
   json <- query |>
     httr2::request() |>
