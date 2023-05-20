@@ -12,9 +12,7 @@ This function retrieves administrative information (e.g., district, city, and pr
 get_admin_info(x, y, sleep = 0, full = FALSE)
 }
 \arguments{
-\item{x}{numeric vector. The x-coordinate of the location.}
-
-\item{y}{numeric vector. The y-coordinate of the location.}
+\item{list_MCT}{list. A list containing Baidu Mercator }
 
 \item{sleep}{numeric. The number of seconds to sleep between each request. Defaults to 0.}
 
