@@ -21,5 +21,5 @@ get_admin_info(x, y, sleep = 0, full = FALSE)
 \item{full}{logical. If TRUE, return the full response from the API. Defaults to FALSE.}
 }
 \value{
-If \code{full = TRUE}, the function returns a list containing the full response from the API. Otherwise, it returns a list containing the district, city, and province of the location.
+If \code{full = TRUE}, the function returns a list containing the full response from the API. Otherwise, it returns a tibble containing the district, city, and province of the location.
 }

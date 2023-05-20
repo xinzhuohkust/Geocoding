@@ -21,9 +21,9 @@ MC2LL <- list(c(1.410526172116255e-8, 0.00000898305509648872, -1.9939833816331,
 X_PI <- 3.14159265358979324 * 3000.0 / 180.0
 
 
-convert_MCT <- function(lon, lat) {
-  lon <- as.numeric(lon)
-  lat <- as.numeric(lat)
+convert_MCT <- function(list_MCT) {
+  lon <- as.numeric(list_MCT[[1]])
+  lat <- as.numeric(list_MCT[[2]])
   ax <- NULL
 
   for (j in 1:length(MCBAND)) {
@@ -48,13 +48,7 @@ convert_MCT <- function(lon, lat) {
   if (lat < 0) {
     aw <- aw * -1
   }
-  
-  return(
-    list(
-    "longitude" = e,
-    "latitude" = aw
-    )
-   )
+  return(c(e, aw))
 }
 
 

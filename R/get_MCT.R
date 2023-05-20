@@ -17,8 +17,6 @@ get_MCT <- function(address, sleep = 0) {
     purrr::pluck("content", "coord")
 
   Sys.sleep(sleep)
-  
-  names(MCT) <- c("longitude", "latitude")
 
   return(MCT)
 }

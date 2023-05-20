@@ -1,7 +1,7 @@
 \name{get_MCT}
 \alias{get_MCT}
 \title{
-Get the Mercator coordinates of a location using Baidu Maps API
+Get the Mercator coordinates (bd09mc) of a location using Baidu Maps API
 }
 \usage{
 get_MCT(address, sleep)
