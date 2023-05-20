@@ -12,9 +12,9 @@
   drive_plan(origin, destination, sleep = 0, ak)
 }
 \arguments{
-  \item{origin}{list. A list containing the latitude and longitude of the origin point.}
+  \item{origin}{vector. A vector containing the latitude and longitude of the origin point.}
 
-  \item{destination}{list. A list containing the latitude and longitude of the destination point.}
+  \item{destination}{vector. A vector containing the latitude and longitude of the destination point.}
 
   \item{sleep}{numeric. The sleep time in seconds between API requests. Default is 0.}
 
