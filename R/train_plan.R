@@ -1,7 +1,7 @@
 train_plan <- function(origin, destination, uid = "", sleep = 0, ak) {
 
   if(identical(uid, "")) {
-  query <- stringr::str_c("https://api.map.baidu.com/direction/v2/transit?origin=", origin[2], ",", origin[1], "&destination=", destination[[2]], ",", destination[[1]], "&trans_type_intercity=0&ak=", ak)
+    query <- stringr::str_c("https://api.map.baidu.com/direction/v2/transit?origin=", origin[2], ",", origin[1], "&destination=", destination[[2]], ",", destination[[1]], "&trans_type_intercity=0&ak=", ak)
   } else {
     if(length(uid) != 2) {
       print("Error! uid must be a character vector of length two.")
