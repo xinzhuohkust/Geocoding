@@ -41,7 +41,7 @@ Geocoding::train_plan(
   ak = "your ak"
 )
 ```
-## Visulation (coming soon)
+## Visualization (coming soon)
 interactive map and 3D map
 
 
