@@ -22,7 +22,8 @@ get_admin_info <- function(list_MCT, sleep = 0, full = FALSE) {
     info <- list(
       district = purrr::pluck(location, "address_detail", "district"),
       city = purrr::pluck(location, "address_detail", "city"),
-      province = purrr::pluck(location, "address_detail", "province")
+      province = purrr::pluck(location, "address_detail", "province"),
+      uid = purrr::pluck(location, "poi_region", "uid")
     ) |> 
       tibble::as_tibble()
     return(info)
