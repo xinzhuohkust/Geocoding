@@ -9,7 +9,7 @@ Get administrative information by coordinates.
 This function retrieves administrative information (e.g., district, city, and province) from a geographical location specified by coordinates using the Baidu Maps API.
 }
 \usage{
-get_admin_info(list_MCT, sleep = 0, full = FALSE)
+get_admin_info(list_MCT, sleep = 0, full = FALSE, uid = TRUE)
 }
 \arguments{
 \item{list_MCT}{list. A list containing Baidu Mercator.}
@@ -17,6 +17,8 @@ get_admin_info(list_MCT, sleep = 0, full = FALSE)
 \item{sleep}{numeric. The number of seconds to sleep between each request. Defaults to 0.}
 
 \item{full}{logical. If TRUE, return the full response from the API. Defaults to FALSE.}
+}
+\item{uid}{logical. If TRUE, return the uid of the address. Defaults to FALSE.}
 }
 \value{
 If \code{full = TRUE}, the function returns a list containing the full response from the API. Otherwise, it returns a tibble containing the district, city, and province of the location.
