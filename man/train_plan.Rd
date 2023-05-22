@@ -19,6 +19,8 @@
   \item{sleep}{numeric. The sleep time in seconds between API requests. Default is 0.}
 
   \item{ak}{character. The Baidu Map API key.}
+  
+  \item{uid}{vector. The character vector containing the uid from the \code{get_admin_info}.}
 }
 \details{
   This function sends a request to the Baidu Map API to retrieve transit information 
