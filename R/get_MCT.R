@@ -4,8 +4,8 @@ get_MCT <- purrr::possibly(
 
         MCT <- query |>
             httr2::request() |>
-            req_timeout(30) |>
-            req_retry(
+            httr2::req_timeout(30) |>
+            httr2::req_retry(
                 max_tries = 3,
                 is_transient = \(resp) !httr2::resp_status(resp) %in% c(200)
             ) |>
