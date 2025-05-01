@@ -4,15 +4,13 @@ get_MCT <- purrr::possibly(
 
         MCT <- query |>
             httr2::request() |>
-            httr2::req_timeout(5) |>
-            httr2::req_retry(
-            max_tries = 3,
-            backoff = ~ 5
+            req_timeout(30) |>
+            req_retry(
+                max_tries = 3,
+                is_transient = \(resp) !httr2::resp_status(resp) %in% c(200)
             ) |>
             httr2::req_perform() |>
-            purrr::pluck("body") |>
-            rvest::read_html() |>
-            rvest::html_text() |>
+            httr2::resp_body_string() |>
             stringr::str_extract("(?<=\\d\\().+?(?=\\)$)") |>
             jsonlite::fromJSON() |>
             purrr::pluck("content", "coord")
@@ -21,5 +19,6 @@ get_MCT <- purrr::possibly(
 
         return(MCT)
     },
+    quiet = FALSE,
     otherwise = "error!"
 )
