@@ -39,5 +39,6 @@ get_admin_info <- purrr::possibly(
         }
     }
   }, 
-  otherwise = "error!"
+  otherwise = "error!",
+  quiet = FALSE
 )
